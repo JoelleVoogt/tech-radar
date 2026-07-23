@@ -1,13 +1,13 @@
 # Youwe Tech Radar
 
-An interactive technology radar for Youwe. It visualises the technologies, platforms,
+An interactive technology radar. It visualises the technologies, platforms,
 tools and frameworks Youwe uses, trials and assesses — grouped by quadrant and ring —
 straight from a single source table in Confluence.
 
 The radar is a static front-end (D3) served by Vercel, with a small serverless
 function that reads the Confluence source table and exposes it as JSON to the app.
 
-> Built on Thoughtworks' open-source [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar) (AGPL-3.0), adapted by Youwe to read from Confluence and to use the Youwe design-system styling.
+> Built on Thoughtworks' open-source [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar) (AGPL-3.0), adapted by to read from Confluence and to use the Youwe design-system styling.
 
 ## How it works
 
@@ -28,17 +28,17 @@ hit on every page load.
 Maintain the radar by editing the table on the Confluence source page. Columns map to
 the radar as follows:
 
-| Confluence column   | Radar field     | Notes                                              |
-| ------------------- | --------------- | -------------------------------------------------- |
-| Technology          | `name`          | Blip label                                         |
+| Confluence column   | Radar field     | Notes                                                   |
+| ------------------- | --------------- | ------------------------------------------------------- |
+| Technology          | `name`          | Blip label                                              |
 | Quadrant            | `quadrant`      | Techniques / Platforms / Tools / Languages & Frameworks |
-| Ring                | `ring`          | Adopt / Trial / Assess / Caution                   |
-| Status              | `status`        | e.g. active / candidate                            |
-| Owner               | `owner`         | Owning guild / team                                |
-| Review Date         | `reviewDate`    |                                                    |
-| Confluence Page URL | `confluenceUrl` | Linked from the blip detail                        |
-| Notes               | `description`   | Shown in the blip detail                           |
-| Moved               | `isNew`         | `2` marks a blip as new this cycle                 |
+| Ring                | `ring`          | Adopt / Trial / Assess / Caution                        |
+| Status              | `status`        | e.g. active / candidate                                 |
+| Owner               | `owner`         | Owning guild / team                                     |
+| Review Date         | `reviewDate`    |                                                         |
+| Confluence Page URL | `confluenceUrl` | Linked from the blip detail                             |
+| Notes               | `description`   | Shown in the blip detail                                |
+| Moved               | `isNew`         | `2` marks a blip as new this cycle                      |
 
 Quadrant and ring names are case-insensitive and `Languages-and-Frameworks` /
 `Languages & Frameworks` are treated the same. The legacy ring name **Hold** is
@@ -95,9 +95,9 @@ environment variables.
 ## Theming
 
 Colours follow the Youwe Design System (neutral + primary ramps) and are defined in
-[src/stylesheets/_colors.scss](src/stylesheets/_colors.scss). A navy-tinted dark mode is
+[src/stylesheets/\_colors.scss](src/stylesheets/_colors.scss). A navy-tinted dark mode is
 applied automatically via `prefers-color-scheme` in
-[src/stylesheets/_darkmode.scss](src/stylesheets/_darkmode.scss).
+[src/stylesheets/\_darkmode.scss](src/stylesheets/_darkmode.scss).
 
 ## Credits & licence
 

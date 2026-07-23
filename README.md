@@ -4,12 +4,12 @@ An interactive technology radar. It visualises the technologies, platforms,
 tools and frameworks we use, trials and assesses — grouped by quadrant and ring —
 straight from a single source table in Confluence.
 
-![Tech Radar thumbnail](src/images/thumbnail.png)
+![Tech Radar thumbnail](src/images/thumbnail2.png)
 
 The radar is a static front-end (D3) served by Vercel, with a small serverless
 function that reads the Confluence source table and exposes it as JSON to the app.
 
-> Built on Thoughtworks' open-source [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar) (AGPL-3.0), adapted by to read from Confluence and to use the Youwe design-system styling.
+> Built on Thoughtworks' open-source [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar) (AGPL-3.0), adapted to read from Confluence and to use the Youwe design-system styling. Presentation also draws inspiration from [global.techradar.com/nl-nl](https://global.techradar.com/nl-nl).
 
 ## How it works
 

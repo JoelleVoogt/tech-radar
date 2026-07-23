@@ -1,0 +1,83 @@
+@import 'layout';
+@import 'fonts';
+
+#footer {
+  text-align: center;
+  clear: both;
+
+  .footer-content {
+    width: 50%;
+    margin: 0 auto;
+
+    p {
+      padding-top: 60px;
+      font-size: $baseFont;
+      font-weight: $baseWeight;
+      text-align: left;
+    }
+  }
+}
+
+footer.youwe-footer {
+  margin-top: 0;
+  height: 72px;
+  box-sizing: border-box;
+  padding: 0 24px;
+  border-top: 1px solid rgba(#163c4d, 0.1);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  clear: both;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px !important;
+    color: #667085;
+    letter-spacing: 0.04em;
+  }
+
+  a {
+    color: #1c2433;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      height: 36px;
+      width: auto;
+      display: block;
+    }
+  }
+}
+
+@if $UIRefresh2022 {
+  footer {
+    // margin-bottom: 40px;
+
+    p {
+      @include eight-column-layout-margin;
+      font-family: $baseFontFamily;
+      font-weight: normal;
+      margin-top: 30px;
+      font-size: 16px !important;
+
+      @include media-query-large {
+        font-size: 16px !important;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
-# Youwe Tech Radar
+# Tech Radar
 
 An interactive technology radar. It visualises the technologies, platforms,
-tools and frameworks Youwe uses, trials and assesses — grouped by quadrant and ring —
+tools and frameworks we use, trials and assesses — grouped by quadrant and ring —
 straight from a single source table in Confluence.
 
 The radar is a static front-end (D3) served by Vercel, with a small serverless
